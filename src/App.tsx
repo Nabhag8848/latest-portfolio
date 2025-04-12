@@ -1,6 +1,11 @@
+import { HelmetProvider } from "react-helmet-async";
+import { AppRouter } from "./app/components/AppRouter";
 import "./index.css";
-function App() {
-  return <h1>Hello</h1>;
-}
 
-export default App;
+export const App = () => {
+  return (
+    <HelmetProvider>
+      <AppRouter />
+    </HelmetProvider>
+  );
+};
