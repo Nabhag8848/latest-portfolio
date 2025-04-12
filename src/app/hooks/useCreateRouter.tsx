@@ -1,7 +1,7 @@
+import { AppRouterProviders } from "@app/components/AppRouterProviders";
+import { AppPath } from "@utils/title-util";
 import { Route } from "react-router";
 import { createBrowserRouter, createRoutesFromElements } from "react-router";
-import { AppRouterProviders } from "../components/AppRouterProviders";
-import { AppPath } from "../../utils/title-util";
 
 export const useCreateRouter = () => {
   return createBrowserRouter(

@@ -37,6 +37,7 @@ export default tseslint.config(
       ],
       ...reactX.configs["recommended-typescript"].rules,
       ...reactDom.configs.recommended.rules,
+      "import/no-relative-parent-imports": "warn",
     },
   }
 );
