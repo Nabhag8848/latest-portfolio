@@ -1,11 +1,14 @@
-import { Global } from "@emotion/react";
-import { GLOBAL_STYLES } from "@ui/styles";
+import { Global, useTheme } from "@emotion/react";
+import { globalStyles } from "@ui/styles/global";
 import { Outlet } from "react-router";
 
 export const DefaultLayout = () => {
+  const theme = useTheme();
+  const styles = globalStyles(theme);
+
   return (
     <>
-      <Global styles={GLOBAL_STYLES} />
+      <Global styles={styles} />
       <Outlet />
     </>
   );
