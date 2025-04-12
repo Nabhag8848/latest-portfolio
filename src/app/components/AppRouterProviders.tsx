@@ -1,4 +1,4 @@
-import { useLocation } from "react-router";
+import { Outlet, useLocation } from "react-router";
 import { StrictMode } from "react";
 import { getPageTitleFromPath } from "@utils/title-util";
 import { PageTitle } from "@ui/utils/PageTitle";
@@ -10,6 +10,7 @@ export const AppRouterProviders = () => {
   return (
     <StrictMode>
       <PageTitle title={title} />
+      <Outlet />
     </StrictMode>
   );
 };
