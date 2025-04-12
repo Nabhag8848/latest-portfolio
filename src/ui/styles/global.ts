@@ -1,4 +1,4 @@
-import { ThemeType } from "@ui/types/ThemeType";
+import { ThemeType } from "@ui/types/theme";
 
 export const globalStyles = (theme: ThemeType) => () => {
   return {
