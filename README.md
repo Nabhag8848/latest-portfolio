@@ -161,21 +161,19 @@ The development server will start at http://localhost:3001
 ```bash
 # Create production build
 pnpm build
-
+```
 
 ## Project Structure
 
 ```
-
 src/
-├── app/ # Application-specific components and logic
-├── ui/ # Reusable UI components and theme
-│ ├── layout/ # Layout components
-│ ├── theme/ # Theme configuration
-│ └── styles/ # Global styles
-├── utils/ # Utility functions
-└── main.tsx # Application entry point
-
+├── app/          # Application-specific components and logic
+├── ui/           # Reusable UI components and theme
+│   ├── layout/   # Layout components
+│   ├── theme/    # Theme configuration
+│   └── styles/   # Global styles
+├── utils/        # Utility functions
+└── main.tsx      # Application entry point
 ```
 
 ## Theme Configuration
@@ -201,4 +199,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+```
+
 ```
