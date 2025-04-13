@@ -1,8 +1,8 @@
 {
-  "name": "latest-profile",
-  "private": true,
-  "version": "0.0.0",
+  "name": "react-vite-template",
+  "version": "1.0.0",
   "type": "module",
+  "author": "Nabhag8848",
   "scripts": {
     "dev": "vite --port 3001",
     "build": "tsc -b && vite build",
