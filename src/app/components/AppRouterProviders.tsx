@@ -11,7 +11,7 @@ export const AppRouterProviders = () => {
   const isDarkMode = preferredColorScheme === "dark";
   const theme = isDarkMode ? THEME_DARK : THEME_LIGHT;
 
-  document.documentElement.className = isDarkMode ? "dark" : "light";
+  document.documentElement.className = theme.__name__;
 
   return (
     <ThemeProvider theme={theme}>
