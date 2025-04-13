@@ -1,19 +1,22 @@
-import { Outlet, useLocation } from "react-router";
+import { Outlet } from "react-router";
 import { StrictMode } from "react";
-import { getPageTitleFromPath } from "@utils/title-util";
 import { PageTitle } from "@ui/utils/PageTitle";
 import { ThemeProvider } from "@emotion/react";
 import { THEME_DARK } from "@ui/theme/dark";
+import { useSystemColorScheme } from "@ui/theme/hooks/useSystemColorSchem";
+import { THEME_LIGHT } from "@ui/theme/light";
 
 export const AppRouterProviders = () => {
-  const { pathname } = useLocation();
-  const title = getPageTitleFromPath(pathname);
-  const theme = THEME_DARK;
+  const preferredColorScheme = useSystemColorScheme();
+  const isDarkMode = preferredColorScheme === "dark";
+  const theme = isDarkMode ? THEME_DARK : THEME_LIGHT;
+
+  document.documentElement.className = isDarkMode ? "dark" : "light";
 
   return (
     <ThemeProvider theme={theme}>
       <StrictMode>
-        <PageTitle title={title} />
+        <PageTitle />
         <Outlet />
       </StrictMode>
     </ThemeProvider>
