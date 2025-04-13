@@ -1,6 +1,6 @@
 import { AppRouterProviders } from "@app/components/AppRouterProviders";
 import { DefaultLayout } from "@ui/layout/components/DefaultLayout";
-import { AppPath } from "@utils/title-util";
+import { AppPath } from "@utils/title";
 import { Route } from "react-router";
 import { createBrowserRouter, createRoutesFromElements } from "react-router";
 

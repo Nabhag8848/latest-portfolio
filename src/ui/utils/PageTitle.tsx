@@ -1,4 +1,4 @@
-import { getPageTitleFromPath } from "@utils/title-util";
+import { getPageTitleFromPath } from "@utils/title";
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router";
 
