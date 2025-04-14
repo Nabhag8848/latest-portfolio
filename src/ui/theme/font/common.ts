@@ -23,6 +23,6 @@ export const FONT_COMMON = {
     bold: 700,
   },
   family: {
-    sans: "'Inter', sans-serif",
+    sans: "Inter, sans-serif",
   },
 };
