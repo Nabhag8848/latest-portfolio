@@ -1,3 +1,5 @@
+import { TEXT } from "./text/common";
+
 export const THEME_COMMON = {
   spacing: {
     xxs: "0.2rem", // 2px
@@ -12,4 +14,5 @@ export const THEME_COMMON = {
     "4xl": "8rem", // 80px
     "5xl": "9.6rem", // 96px
   },
+  text: TEXT,
 };

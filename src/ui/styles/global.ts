@@ -15,6 +15,7 @@ export const globalStyles = (theme: ThemeType) => () => {
       "overflow-x": "hidden",
       "font-family": theme.font.family.sans,
       "font-weight": theme.font.weight.regular,
+      "line-height": theme.text.lineHeight.default,
     },
   };
 };
